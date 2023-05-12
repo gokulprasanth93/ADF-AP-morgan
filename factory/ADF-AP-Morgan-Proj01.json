@@ -1,0 +1,9 @@
+{
+	"name": "ADF-AP-Morgan-Proj01",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d2829b32-af78-4fa5-98de-30c456bc190b",
+		"tenantId": "c2444af8-167b-4525-b266-943fb8a8757e"
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"name": "tr_product",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_generic",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"fileName": "@triggerbody().fileName"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/ap-morgan-input/blobs/Landing/",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/b075e2bf-4daa-474a-b220-636487adb9ce/resourceGroups/Dev-Azure005/providers/Microsoft.Storage/storageAccounts/adlsgeneralstore",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
